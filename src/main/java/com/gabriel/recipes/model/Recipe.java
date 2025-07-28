@@ -34,4 +34,14 @@ public class Recipe {
     @Column(name = "id_recipe_type")
     private Long typeId;
 
+    @Override
+    public String toString() {
+        return "Recipe{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", instructions='" + instructions + '\'' +
+                ", createdAt=" + createdAt +
+                ", typeId=" + typeId +
+                '}';
+    }
 }

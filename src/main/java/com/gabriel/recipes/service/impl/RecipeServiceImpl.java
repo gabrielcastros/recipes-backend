@@ -7,6 +7,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class RecipeServiceImpl implements RecipeService {
@@ -25,9 +26,9 @@ public class RecipeServiceImpl implements RecipeService {
         return repository.findAll();
     }
 
-//    public Recipe getRecipeById(Long id) {
-//        return repository.findById(id);
-//    }
+    public Optional<Recipe> getRecipeById(Long id) {
+        return repository.findById(id);
+    }
 
     public List<Recipe> updateRecipe(Recipe recipe) {
         repository.save(recipe);
