@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @Service
 public class RecipeServiceImpl implements RecipeService {
-    private RecipeRepository repository;
+    private final RecipeRepository repository;
 
     public RecipeServiceImpl(RecipeRepository repository) {
         this.repository = repository;

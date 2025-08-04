@@ -11,7 +11,7 @@ import java.util.Optional;
 @RequestMapping("/recipe")
 public class RecipeController {
 
-    private RecipeService service;
+    private final RecipeService service;
 
     public RecipeController(RecipeService service) {
         this.service = service;
