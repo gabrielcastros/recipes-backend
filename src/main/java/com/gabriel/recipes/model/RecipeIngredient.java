@@ -12,7 +12,7 @@ import lombok.Setter;
 public class RecipeIngredient {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PUBLIC.SQ_RECIPE_INGREDIENT")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_recipe_ingredient")
     private Long id;
 
