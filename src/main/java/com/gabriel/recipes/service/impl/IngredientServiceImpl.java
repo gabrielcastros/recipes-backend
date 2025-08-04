@@ -3,10 +3,12 @@ package com.gabriel.recipes.service.impl;
 import com.gabriel.recipes.model.Ingredient;
 import com.gabriel.recipes.repository.IngredientRepository;
 import com.gabriel.recipes.service.IngredientService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class IngredientServiceImpl implements IngredientService {
 
     private final IngredientRepository repository;

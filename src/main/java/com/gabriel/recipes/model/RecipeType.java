@@ -13,7 +13,7 @@ import org.antlr.v4.runtime.misc.NotNull;
 public class RecipeType {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PUBLIC.SQ_RECIPE_TYPE")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_recipe_type")
     private Long id;
 
@@ -22,7 +22,7 @@ public class RecipeType {
     private String name;
 
     @Column(name = "id_parent")
-    private int parentId;
+    private Integer parentId;
 
     @Column(name = "vl_level")
     @NotNull

@@ -14,7 +14,7 @@ import org.antlr.v4.runtime.misc.NotNull;
 public class Ingredient {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PUBLIC.SQ_INGREDIENT")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_ingredient")
     private Long id;
 

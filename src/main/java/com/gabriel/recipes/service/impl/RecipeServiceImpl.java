@@ -3,7 +3,6 @@ package com.gabriel.recipes.service.impl;
 import com.gabriel.recipes.model.Recipe;
 import com.gabriel.recipes.repository.RecipeRepository;
 import com.gabriel.recipes.service.RecipeService;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
