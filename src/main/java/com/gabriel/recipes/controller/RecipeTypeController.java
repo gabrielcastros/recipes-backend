@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/recipe")
+@RequestMapping("/type")
 public class RecipeTypeController {
 
     private final RecipeTypeService service;
@@ -18,27 +18,27 @@ public class RecipeTypeController {
     }
 
     @PostMapping
-    public List<RecipeType> createRecipe(@RequestBody RecipeType recipeType) {
+    public List<RecipeType> createRecipeType(@RequestBody RecipeType recipeType) {
         return service.createRecipeType(recipeType);
     }
 
     @GetMapping("/{id}")
-    public Optional<RecipeType> getRecipeById (@PathVariable Long id) {
+    public Optional<RecipeType> getRecipeTypeById (@PathVariable Long id) {
         return service.getRecipeTypeById(id);
     }
 
     @GetMapping("/all")
-    public List<RecipeType> getRecipes() {
+    public List<RecipeType> getRecipeTypes() {
         return service.getRecipeTypes();
     }
 
     @PutMapping
-    public List<RecipeType> updateRecipe(@RequestBody RecipeType recipeType) {
+    public List<RecipeType> updateRecipeType (@RequestBody RecipeType recipeType) {
         return service.updateRecipeType(recipeType);
     }
 
     @DeleteMapping("/{id}")
-    public List<RecipeType> deleteRecipe(@PathVariable Long id) {
+    public List<RecipeType> deleteRecipeType (@PathVariable Long id) {
         return service.deleteRecipeType(id);
     }
 }
