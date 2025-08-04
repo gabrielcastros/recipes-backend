@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/type")
+@RequestMapping("/recipe-ingredient")
 public class RecipeIngredientController {
 
     private final RecipeIngredientService service;
